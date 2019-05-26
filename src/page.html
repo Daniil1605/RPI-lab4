@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>4</title>
+	</head>
+	<body>
+		<header>
+			<input class="find-input" type="text">
+			<button class="find-button">Find</button>
+		</header>
+				<div class="source-block"></div>
+		<div>
+			<div class="news-block">
+				<div class="news-block__news-list"></div>
+				<p class="news-block__no-articles-message">There are no articles matching your request</p>
+				<button class="load-more-button">Load more</button>
+			</div>
+		</div>
+
+		<template id="template__source">
+			<button class="template__source__button">
+				<p class="template__source__id"></p>
+			</button>
+		</template>
+
+		<template id="news__template">
+			<a class="news__template__link">
+				<img class="news__template__image">
+				<h3 class="news__template__title"></h3>
+				<p class="news__template__description"></p>
+
+			</a>
+		</template>
+
+		<script src="script.js"></script>
+	</body>
+</html>
