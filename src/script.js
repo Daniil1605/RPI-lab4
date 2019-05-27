@@ -81,12 +81,12 @@ document.querySelector('.find-input').addEventListener('keydown', function() {
 	}
 });
 
-function create_news_block(article, fragment) {
+function create_news_block(answer, fragment) {
 	let token = news__template.content.cloneNode(true);
-	token.querySelector('.news__template__image').src = article.urlToImage;
-	token.querySelector('.news__template__title').innerHTML = article.title;
-	token.querySelector('.news__template__description').innerHTML = article.description;
-	token.querySelector('.news__template__link').href = article.url;
+	token.querySelector('.news__template__image').src = answer.urlToImage;
+	token.querySelector('.news__template__title').innerHTML = answer.title;
+	token.querySelector('.news__template__description').innerHTML = answer.description;
+	token.querySelector('.news__template__link').href = answer.url;
 	fragment.appendChild(token);
 }
 
